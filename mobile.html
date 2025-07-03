@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moblie Z-Bank</title>
+    <link rel="apple-touch-icon" href="IMG_4878.jpg">
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+    }
+
+    header {
+        background: linear-gradient(90deg, #006200 25%, #004400 50%, #006200 75%);
+        background-size: 200% 100%;
+        animation: shimmer 1.5s infinite;
+        padding: 10px;
+        height: 200px;
+        color: lime;
+    }
+
+    @keyframes shimmer {
+        0% { background-position: 200% 0; }
+        100% { background-position: -200% 0; }
+    }
+
+    .text {
+        font-size: 60px;
+        margin-top: 68px;
+    }
+
+    .text-2 {
+        font-size: 20px;
+    }
+
+    main {
+        background-color: black;
+    }
+
+    .Z-QR {
+        color: white;
+        background: rgba(255, 255, 255, 0.05);
+        height: 60px;
+        width: 352px;
+        border-radius: 100px;
+        padding: 10px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        user-select: none;
+
+        /* Начальные значения для анимации */
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 0.8s ease-out forwards;
+        animation-delay: 0.3s; /* необязательно, но красиво */
+    }
+
+    /* Ключевые кадры появления */
+    @keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    }
+
+    .Transfers-customer {
+        color: white;
+        background: rgba(255, 255, 255, 0.05);
+        height: 60px;
+        width: 352px;
+        border-radius: 100px;
+        padding: 10px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        user-select: none;
+        margin-top: 12px;
+
+        /* Начальные значения для анимации */
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 0.8s ease-out forwards;
+        animation-delay: 0.3s; /* необязательно, но красиво */
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <p class="text-2">Z Gold *0000</p>
+        <p class="text">100 000 ₸</p>
+    </header>
+
+    <main>
+        <br>
+        <div class="Z-QR">
+            <p class="text-2">Z QR</p>
+        </div>
+        <br>
+        <div class="Transfers-customer">
+            <p class="text-2">Переводы клиенту Z</p>
+        </div>
+        <br>
+    </main>
+</body>
+</html>
